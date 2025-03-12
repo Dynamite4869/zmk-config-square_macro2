@@ -1,0 +1,4 @@
+if SHIELD_SQUARE_MACRO
+  config ZMK_KEYBOARD_NAME
+  default "Square_macro"
+endif
