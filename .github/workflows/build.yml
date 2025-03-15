@@ -34,7 +34,7 @@ jobs:
           west update
           west zephyr-export
           pip3 install -r zephyr/scripts/requirements.txt
-
+          
       - name: Build firmware
         run: |
           west build -s zmk/app -b ${{ matrix.board }} --pristine -- -DSHIELD=${{ matrix.shield }}
