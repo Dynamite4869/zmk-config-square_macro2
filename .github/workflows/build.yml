@@ -28,13 +28,13 @@ jobs:
           pip3 install --user west
           echo "$HOME/.local/bin" >> $GITHUB_PATH
 
-      - name: Initialize west and update modules
+      - name: Initialize west and update modules  # ← 正しい位置にインデント
         run: |
-          west init -l
+          west init -m https://github.com/zmk-config-square_macro2/zmk-config-square_macro2.git
           west update
           west zephyr-export
           pip3 install -r zephyr/scripts/requirements.txt
-          
+
       - name: Build firmware
         run: |
           west build -s zmk/app -b ${{ matrix.board }} --pristine -- -DSHIELD=${{ matrix.shield }}
