@@ -46,7 +46,6 @@ jobs:
           path: build/zephyr/zmk.uf2
       - name: Initialize west and update modules
         run: |
-          west init -m https://github.com/zmk-config-square_macro2/zmk-config-square_macro2.git
           west update
           west zephyr-export
           pip3 install -r zephyr/scripts/requirements.txt
