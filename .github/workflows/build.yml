@@ -37,7 +37,7 @@ jobs:
 
       - name: Build firmware
         run: |
-          west build -s zmk/app -b ${{ matrix.board }} -- -DSHIELD=${{ matrix.shield }}
+          west build -s zmk/app -b ${{ matrix.board }} --pristine -- -DSHIELD=${{ matrix.shield }}
 
       - name: Upload firmware
         uses: actions/upload-artifact@v4
