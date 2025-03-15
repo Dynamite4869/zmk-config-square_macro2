@@ -1,0 +1,4 @@
+name: zmk
+build:
+  settings:
+    CONFIG_ZMK_KEYMAP=y

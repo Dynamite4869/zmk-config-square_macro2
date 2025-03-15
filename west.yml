@@ -39,3 +39,4 @@ manifest:
       remote: zmkfirmware
   self:
     west-commands: scripts/west-commands.yml
+    path: zmk-config-square_macro2
