@@ -44,8 +44,4 @@ jobs:
         with:
           name: firmware
           path: build/zephyr/zmk.uf2
-      - name: Initialize west and update modules
-        run: |
-          west update
-          west zephyr-export
-          pip3 install -r zephyr/scripts/requirements.txt
+
