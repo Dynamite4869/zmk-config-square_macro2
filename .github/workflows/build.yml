@@ -44,4 +44,7 @@ jobs:
         with:
           name: firmware
           path: build/zephyr/zmk.uf2
+      - name: Clean untracked files
+        run: git clean -fd
+
 
