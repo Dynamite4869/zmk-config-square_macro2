@@ -212,10 +212,10 @@ SHIELD:UNINITIALIZED=square_macro
 WEST_PYTHON:UNINITIALIZED=C:/Users/mtymh/AppData/Local/Programs/Python/Python313/python.exe
 
 //Zephyr base
-ZEPHYR_BASE:PATH=C:/Zephyr
+ZEPHYR_BASE:PATH=C:/Users/mtymh/zmk-config-square_macro2/zephyr
 
 //The directory containing a CMake configuration file for Zephyr.
-Zephyr_DIR:PATH=C:/Zephyr/share/zephyr-package/cmake
+Zephyr_DIR:PATH=C:/Users/mtymh/zmk-config-square_macro2/zephyr/share/zephyr-package/cmake
 
 //Value Computed by CMake
 zmk_BINARY_DIR:STATIC=C:/Users/mtymh/zmk-config-square_macro2/build
