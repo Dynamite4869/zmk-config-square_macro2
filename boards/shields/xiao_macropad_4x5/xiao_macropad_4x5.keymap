@@ -15,7 +15,7 @@
                 &kp M &kp N &kp O &kp P
                 &kp Q &kp R &kp S &kp T
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
