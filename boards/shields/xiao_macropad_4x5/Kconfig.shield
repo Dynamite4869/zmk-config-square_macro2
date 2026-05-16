@@ -1,0 +1,2 @@
+config SHIELD_XIAO_MACROPAD_4X5
+    def_bool $(shields_list_contains,xiao_macropad_4x5)
