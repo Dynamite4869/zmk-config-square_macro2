@@ -45,5 +45,5 @@ GitHub Actions builds are handled by `.github/workflows/build.yml`, using ZMK's 
 1. Build the firmware.
 2. Flash the generated UF2 to the XIAO nRF52840.
 3. Pair over Bluetooth as `Xiao Pad 4x5`.
-4. Test each switch.
+4. Test each key. The diagnostic layout sends `A` through `T`.
 5. Test encoder rotation. It is mapped to volume up/down by default.
