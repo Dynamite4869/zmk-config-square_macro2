@@ -24,6 +24,8 @@ The matrix is written as 5 rows x 4 columns in ZMK. The bottom-right encoder pus
 
 The diagnostic firmware uses `col2row` diode direction. A `row2col` test made the key matrix stop responding, so `col2row` appears to be the correct scan direction.
 
+The PCB switch footprints are placed diagonally compared with the schematic reference order, so the `matrix-transform` maps the physical 4x5 layout to the actual matrix coordinates.
+
 ## Build Target
 
 ```yaml
