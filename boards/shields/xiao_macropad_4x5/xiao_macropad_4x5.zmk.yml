@@ -1,0 +1,8 @@
+file_format: "1"
+id: xiao_macropad_4x5
+name: Xiao Macropad 4x5
+type: shield
+requires: [seeed_xiao]
+features:
+  - keys
+  - encoder
