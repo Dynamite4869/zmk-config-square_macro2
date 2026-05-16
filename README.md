@@ -26,6 +26,8 @@ The diagnostic firmware uses `col2row` diode direction. A `row2col` test made th
 
 The PCB switch footprints are placed diagonally compared with the schematic reference order, so the `matrix-transform` maps the physical 4x5 layout to the actual matrix coordinates.
 
+`xiao_serial` and `xiao_spi` are disabled so the matrix and encoder can use the XIAO pins directly.
+
 ## Build Target
 
 ```yaml
