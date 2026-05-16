@@ -32,6 +32,8 @@ include:
 
 Recent ZMK documentation lists Seeed Studio XIAO nRF52840 as `xiao_ble//zmk`, so this config uses that board name in `build.yaml`.
 
+GitHub Actions builds are handled by `.github/workflows/build.yml`, using ZMK's reusable user config workflow.
+
 ## Files To Edit First
 
 - Key layout: `boards/shields/xiao_macropad_4x5/xiao_macropad_4x5.keymap`
