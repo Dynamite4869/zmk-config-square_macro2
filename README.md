@@ -22,6 +22,8 @@ The schematic image appears to use this matrix:
 
 The matrix is written as 5 rows x 4 columns in ZMK. The bottom-right encoder push switch is part of the matrix at ROW4/COL3.
 
+The current diagnostic firmware uses `row2col` diode direction. If no keys work, try `col2row` instead.
+
 ## Build Target
 
 ```yaml
