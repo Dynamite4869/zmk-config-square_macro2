@@ -9,11 +9,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-                &kp N7       &kp N8       &kp N9       &kp KP_PLUS
-                &kp N4       &kp N5       &kp N6       &kp MINUS
-                &kp N1       &kp N2       &kp N3       &kp ENTER
-                &kp N0       &kp DOT      &kp BSPC     &kp ESC
-                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_CLR
+                &kp A &kp B &kp C &kp D
+                &kp E &kp F &kp G &kp H
+                &kp I &kp J &kp K &kp L
+                &kp M &kp N &kp O &kp P
+                &kp Q &kp R &kp S &kp T
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
