@@ -1,0 +1,6 @@
+if SHIELD_XIAO_MACROPAD_4X5
+
+config ZMK_KEYBOARD_NAME
+    default "Xiao Pad 4x5"
+
+endif
