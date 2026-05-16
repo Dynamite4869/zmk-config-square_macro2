@@ -4,6 +4,10 @@
     status = "disabled";
 };
 
+&xiao_spi {
+    status = "disabled";
+};
+
 / {
     chosen {
         zmk,kscan = &kscan0;
