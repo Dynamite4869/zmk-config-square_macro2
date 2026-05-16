@@ -1,50 +1,7 @@
-name: Build ZMK Firmware
+name: Build ZMK firmware
 
-on:
-  push:
-    branches:
-      - main
-  pull_request:
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        board: [seeeduino_xiao_ble]
-        shield: [square_macro]
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-        with:
-          submodules: recursive
-
-      - name: Install dependencies
-        run: |
-          sudo apt update
-          sudo apt install -y cmake ninja-build python3-pip
-          pip3 install --user west
-          echo "$HOME/.local/bin" >> $GITHUB_PATH
-
-      - name: Initialize west and update modules  # ← 正しい位置にインデント
-        run: |
-          west init -m https://github.com/Dynamite4869/zmk-config-square_macro2.git
-          west update
-          west zephyr-export
-          pip3 install -r zephyr/scripts/requirements.txt
-
-      - name: Build firmware
-        run: |
-          west build -s zmk/app -b ${{ matrix.board }}  -- -DSHIELD=${{ matrix.shield }}
-
-      - name: Upload firmware
-        uses: actions/upload-artifact@v4
-        with:
-          name: firmware
-          path: build/zephyr/zmk.uf2
-      - name: Clean untracked files
-        run: git clean -fd
-
-
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
